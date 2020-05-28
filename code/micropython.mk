@@ -19,4 +19,5 @@ SRC_USERMOD += $(USERMODULES_DIR)/ulab.c
 # This is not actually needed in this example.
 CFLAGS_USERMOD += -I$(USERMODULES_DIR)
 CFLAGS_EXTRA = -DMODULE_ULAB_ENABLED=1
-CFLAGS_USERMOD -= -Wdouble-promotion -Wfloat-conversion
+CFLAGS_USERMOD -= -Wdouble-promotion 
+CFLAGS_USERMOD -= -Wfloat-conversion
